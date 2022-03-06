@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: rgb(255, 240, 223);
+}
+
+.container_main {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.side_item {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 70vh;
+}
+
+.side_item>* {
+    border: 1px solid violet;
+    padding: 0.5rem;
+}
+
+.chat_area {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+
+}
+
+.Chat_Room {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text_box {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: scroll;
+    height: 70vh;
+    width: 20%;
+}
+
+.contacts>* {
+    border: 1px solid black;
+    padding: 1.5rem;
+
+}
+
+.chat_scrool_area {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    overflow: scroll;
+    height: 70vh;
+    width: 100%;
+    background-color: beige;
+}
+/* .chat_scrool_area>:nth-child(1){
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    padding: 2rem;
+    columns: white;
+    justify-content: center;
+    align-items: center;
+
+}
+.chat_scrool_area>:nth-child(1) h1{
+
+color: azure;
+text-align: center;
+margin: auto;} */
+.sender {
+    display: flex;
+    background-color: rgb(0, 255, 255);
+    justify-content: flex-start;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    
+}
+.reciever{
+    display: flex;
+    background-color: rgb(247, 0, 255);
+    justify-content: flex-end;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+.names{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    padding: 0.5rem;
+    columns: white;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.bandy{
+    display: flex;
+    font-size: 0.8rem;
+color: azure;
+} 
+.Chattts{
+display: flex;
+font-size: 0.8rem;
+    color: azure;
+  
+}
+.mydaata{
+    display: flex;
+    font-size: 0.8rem;
+    color: azure;
+   transform: translate(-5rem);
+}
+.me_about{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+
+}
+.blink{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: #000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
